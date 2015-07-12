@@ -11,3 +11,17 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
+
+# Uncomment following line if you want red dots to be displayed
+# while waiting for completion
+COMPLETION_WAITING_DOTS="true"
+#
+# # typing comments in the command line will not return an error
+setopt INTERACTIVE_COMMENTS
+#
+unsetopt correct_all
+
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
+
