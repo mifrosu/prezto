@@ -86,7 +86,7 @@ function prompt_mos_setup {
 
   # Define prompts.
   PROMPT="
-${_prompt_mos_colors[2]}%n%f@${_prompt_mos_colors[2]}%m%f:${_prompt_mos_colors[6]}%~%f "'${vcs_info_msg_0_}'" [%*]
+${_prompt_mos_colors[2]}%n%f@${_prompt_mos_colors[2]}%m%f:${_prompt_mos_colors[6]}%~%f "'${vcs_info_msg_0_}'" %*
 "'$python_info[virtualenv]'"$ "
   RPROMPT=''
 }
